@@ -39,7 +39,7 @@
     transform: scale(0);
     left: 0;
     transition: 1s ease;
-    padding: 10px 14px;
+    padding: 6px 8px;
 }
 
 .mySwiper .swiper-button-prev {
