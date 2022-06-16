@@ -24,7 +24,7 @@ function Top() {
                 direction={'horizontal'}
                 effect={'fade'}
                 autoplay={{
-                    delay: 500000,
+                    delay: 5000,
                     disableOnInteraction: false,
                 }}
                 parallax={true}
