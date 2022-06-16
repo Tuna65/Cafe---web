@@ -1,38 +1,76 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&family=Oswald:wght@200;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap');
+
+:root {
+    --font-open: 'Open Sans', sans-serif;
+    --font-osaw: 'Oswald', sans-serif;
+    --font-aura: 'Allura', cursive;
+    --background-color: #121217;
+    --bg-color: #18181d;
+    --text-color: #999;
+    --orage: #ca8e46;
+    --white: white;
+    --black: black;
+    --rgba-bg-white: rgba(255, 255, 255, 0.3);
+    --rgba-bg-black: rgba(0, 0, 0, 0.3);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+html {
+    font-size: 62.5%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+body {
+    font-size: 1.6rem;
+    font-family: var(--font-osaw);
+    line-height: 1.8rem;
 }
 
-.App-link {
-  color: #61dafb;
+ul {
+    list-style: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button {
+    box-sizing: border-box;
+    padding: 10px 24px;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+input,
+textarea {
+    border: none;
+    outline: none;
+    font-size: 2rem;
+    padding: 8px 8px;
+    background-color: #131317;
+    width: 100%;
+}
+
+label {
+    color: #ccc;
+    font-size: 1.3rem;
+    font-family: var(--font-open);
+}
+
+a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+#send {
+    font-size: 1.3rem;
+    font-weight: 800;
 }

@@ -1,0 +1,28 @@
+.count__wrapper {
+    background-color: var(--orage);
+    padding: 50px;
+    color: var(--white);
+}
+
+.count__inner {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.decount {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.decount-number {
+    font-size: 3.6rem;
+    font-weight: 400;
+    padding-bottom: 30px;
+}
+
+.decount-type {
+    font-size: 1.4rem;
+}

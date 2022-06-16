@@ -1,0 +1,42 @@
+.om__wrapper {
+    background-color: #121217;
+    padding-top: 10rem;
+    margin-top: 20px;
+    padding-bottom: 20rem;
+}
+
+.om__title {
+    text-align: center;
+    /* margin: auto; */
+}
+
+.om__list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10rem;
+}
+
+.om__list > * {
+    color: var(--white);
+    padding: 8px 34px;
+    margin: 0 6px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.active {
+    border: 2px solid var(--orage);
+    color: var(--orage);
+}
+
+.om__post {
+    max-width: 1140px;
+    padding: 0 40px;
+}
+
+.items {
+    margin: 12px 0;
+}

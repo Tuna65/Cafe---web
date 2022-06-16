@@ -1,0 +1,108 @@
+.h__wrapper {
+    width: 100%;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    z-index: 10;
+    transition: background-color 0.3s ease, padding 0.3s ease;
+}
+
+.h__content {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    justify-content: space-between;
+    width: 1170px;
+    padding: 0 15px;
+}
+
+.h__content > :nth-child(1) {
+    position: relative;
+}
+
+.h__content-img {
+    position: absolute;
+    left: 0;
+}
+
+.h__list {
+    list-style: none;
+    display: flex;
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.h__list > * {
+    padding: 10px 24px;
+    cursor: pointer;
+    position: relative;
+    transition: color 0.3s ease;
+    color: var(--white);
+}
+
+.h__list > *:hover {
+    color: var(--orage);
+}
+
+.h__list > :nth-child(1):hover .h__list-home,
+.h__list > :nth-child(2):hover .h__list-menu {
+    /* display: block; */
+    transform: scale(1);
+    top: 50px;
+}
+
+.h__list > :nth-child(1)::before,
+.h__list > :nth-child(2)::before {
+    position: absolute;
+    content: '';
+    width: 69px;
+    height: 30px;
+    display: block;
+    top: 29px;
+    left: 4px;
+}
+
+.h__list-home:hover,
+.h__list-menu > *:hover {
+    background-color: var(--orage);
+    color: var(--black);
+}
+
+.h__list-menu,
+.h__list-home {
+    position: absolute;
+    top: 70px;
+    left: -17px;
+    width: 187px;
+    background-color: #222327;
+    color: #ccc;
+    font-size: 1.5rem;
+    font-weight: 300;
+    display: flex;
+    /* display: none; */
+    flex-direction: column;
+    transition: top 0.3s ease;
+    letter-spacing: 0;
+    transform: scale(0);
+}
+
+.h__list-menu > *,
+.h__list-home {
+    padding: 12px 10px;
+}
+
+.h__list > *::after {
+    position: absolute;
+    content: '/';
+    display: block;
+    color: var(--orage);
+    font-size: 1.4rem;
+    top: 30%;
+    right: -3px;
+}
+
+.h__list > :last-child::after {
+    display: none;
+}

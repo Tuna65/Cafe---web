@@ -1,0 +1,42 @@
+.banner__wrapper {
+    padding: 90px 30px 20px;
+}
+
+.banner__inner > h5 {
+    font-size: 3rem;
+    letter-spacing: 8px;
+    font-weight: 400;
+    color: var(--white);
+    padding-bottom: 12px;
+}
+
+.banner__inner > span {
+    color: var(--orage);
+    font-family: var(--font-open);
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+    position: relative;
+}
+
+.banner__inner > span::after {
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 1px;
+    background-color: var(--rgba-bg-white);
+    display: block;
+    bottom: 6px;
+    left: 110%;
+}
+
+.banner__inner > span::before {
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 1px;
+    background-color: var(--rgba-bg-white);
+    display: block;
+    bottom: 6px;
+    right: 110%;
+}

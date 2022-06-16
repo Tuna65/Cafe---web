@@ -1,0 +1,20 @@
+.item__page-wrapper {
+    background-color: var(--bg-color);
+}
+
+.item__page-header {
+    height: 75px;
+    width: 100%;
+    background-color: var(--bg-color);
+    position: fixed;
+}
+
+.item__page-banner {
+    padding: 80px 0;
+    background-image: url('./../../../img/subheader-6-1.jpg');
+    text-align: center;
+}
+
+.item__page-intro {
+    text-align: center;
+}

@@ -1,0 +1,13 @@
+.e__wrapper {
+    background-color: #121217;
+}
+
+.e__intro {
+    padding-top: 15rem;
+    text-align: center;
+}
+@media (max-width: 768px) {
+    .e__item {
+        padding: 0 12px;
+    }
+}

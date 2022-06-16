@@ -1,0 +1,18 @@
+.md__wrapper {
+    min-height: 200vh;
+}
+
+.md__wrapper-header {
+    height: 75px;
+    width: 100%;
+    background-color: var(--bg-color);
+    position: fixed;
+    z-index: 9;
+}
+
+.md__wrapper-banner {
+    padding: 80px 0;
+    background-image: url('./../../../img/subheader-6-1.jpg');
+    background-size: cover;
+    text-align: center;
+}

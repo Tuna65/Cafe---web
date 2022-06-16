@@ -1,0 +1,63 @@
+.partycard__wrapper {
+    background-color: var(--bg-color);
+    padding-top: 8rem;
+    padding-bottom: 10rem;
+}
+
+.pc__img {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.pc__img > img {
+    width: 100%;
+}
+
+.pc__inner {
+    padding-bottom: 50px;
+}
+
+.pc__inner > h5 {
+    color: var(--white);
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.pc__inner > p,
+.time__days > p,
+.time__hours > p {
+    color: var(--text-color);
+    font-family: var(--font-open);
+    font-size: 1.3rem;
+}
+
+.pc__time {
+    margin-top: 12px;
+}
+
+.pc__time,
+.time__days,
+.time__hours {
+    display: flex;
+    align-items: center;
+}
+
+.time__hours {
+    margin-left: 20px;
+}
+
+.time__days > :first-child,
+.time__hours > :first-child {
+    color: var(--orage);
+    margin-right: 8px;
+    font-size: 1.4rem;
+}
+
+.pc__inner > p {
+    margin-top: 8px;
+    line-height: 2.4rem;
+}

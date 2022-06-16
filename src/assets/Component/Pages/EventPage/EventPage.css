@@ -1,0 +1,15 @@
+.event__header {
+    background-color: var(--bg-color);
+    height: 75px;
+    width: 100%;
+    position: fixed;
+    z-index: 9;
+}
+
+.event__banner {
+    background-image: url('./../../../img/subheader-5-1.jpg');
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-size: cover;
+}

@@ -1,0 +1,30 @@
+.contact__info {
+    background-color: #27282b;
+}
+
+.contact__position {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 46px 40px;
+}
+
+.contact__position > :nth-child(1) {
+    color: var(--orage);
+    font-size: 5rem;
+}
+
+.contact__position > h5 {
+    color: var(--white);
+    font-size: 1.7rem;
+    font-weight: 400;
+    padding-top: 20px;
+}
+
+.contact__position > p {
+    color: var(--text-color);
+    font-family: var(--font-open);
+    font-size: 1.3rem;
+    line-height: 2.5rem;
+    margin-top: 20px;
+}

@@ -1,0 +1,41 @@
+.service__item {
+    display: flex;
+    align-items: center;
+}
+
+.service__item-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.service__item-info {
+    padding-left: 16px;
+}
+
+.name-price {
+    display: flex;
+    color: var(--white);
+    cursor: pointer;
+}
+
+.name-price > :nth-child(2) {
+    width: auto;
+    border-bottom: 1px dashed #aaa;
+    flex: 1;
+}
+
+.item__price {
+    color: var(--orage);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+}
+
+.sevice-description {
+    font-family: 'Lora', serif;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    color: #999;
+    margin-top: 8px;
+}

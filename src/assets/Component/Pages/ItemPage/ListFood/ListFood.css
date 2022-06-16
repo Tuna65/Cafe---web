@@ -1,0 +1,32 @@
+.list__food-wrapper {
+    max-width: 1140px;
+    padding-bottom: 12rem;
+}
+
+.food__inner-img {
+    cursor: pointer;
+}
+
+.food__inner-img > img {
+    width: 100%;
+}
+
+.food__inner-name {
+    color: var(--white);
+    padding-top: 12px;
+    display: inline-block;
+}
+
+.food__inner-details > :first-child {
+    color: var(--orage);
+    font-weight: 500;
+    display: inline-block;
+    margin-top: 12px;
+}
+
+.food__inner-details > :last-child {
+    color: var(--text-color);
+    font-size: 1.3rem;
+    font-family: 'Lora', serif;
+    font-style: italic;
+}

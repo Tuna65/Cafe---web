@@ -1,0 +1,27 @@
+.t-button {
+    border-radius: 1px;
+    border: transparent;
+    position: fixed;
+    left: 92%;
+    top: 85%;
+    cursor: pointer;
+    background-color: var(--orage);
+    color: var(--black);
+    font-size: 1.6rem;
+    font-weight: 600;
+    display: none;
+    z-index: 2;
+    padding: 6px 8px;
+    width: auto;
+}
+
+.t-button:hover {
+    color: var(--orage);
+    background-color: var(--black);
+}
+
+@media (max-width: 768px) {
+    .t-button {
+        left: 85%;
+    }
+}

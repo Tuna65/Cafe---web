@@ -1,0 +1,75 @@
+.b__wrapper {
+    max-height: 580px;
+}
+
+.b__form {
+    max-width: 754px;
+    margin: auto;
+    background-color: #18181d;
+    position: relative;
+    top: -56px;
+    bottom: 0;
+    padding-top: 6.2rem;
+    padding-bottom: 3em;
+    z-index: 1;
+}
+
+.b__intro {
+    text-align: center;
+}
+
+.form__book {
+    display: flex;
+    flex-direction: column;
+}
+
+.form__pic {
+    display: flex;
+    padding: 0 60px;
+}
+
+.form__pic > * {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.pic {
+    display: flex;
+    flex-direction: column;
+}
+
+.pic > * {
+    margin-top: 10px;
+}
+
+.form__contact {
+    padding: 0 45px;
+}
+
+.form__contact > * {
+    margin-top: 18px;
+}
+
+.contact__inner > * {
+    margin-top: 10px;
+}
+
+.submit {
+    box-sizing: border-box;
+    padding: 11px 16px;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: var(--white);
+    background-color: var(--orage);
+    max-width: 180px;
+    font-weight: 700;
+    margin: auto;
+    margin-top: 36px;
+    transition: background-color 0.3s ease;
+    letter-spacing: 0.5px;
+}
+
+.submit:hover {
+    background-color: #18181d;
+}

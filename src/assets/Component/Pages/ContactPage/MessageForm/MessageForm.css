@@ -1,0 +1,15 @@
+.message__form-wrappers {
+    background-color: #27282b;
+}
+
+.form__send {
+    padding: 50px 50px;
+}
+
+.form__send > * {
+    margin-top: 20px;
+    color: var(--white);
+    font-family: var(--font-open);
+    font-weight: 300;
+    font-size: 1.4rem;
+}
