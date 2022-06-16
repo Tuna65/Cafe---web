@@ -21,10 +21,10 @@ function Header() {
                 }
             >
                 <div className="h__content">
-                    <a href="s">
+                    <Link to="/">
                         <img src={logo} alt="" />
                         <img src={logo2} alt="" className="h__content-img" />
-                    </a>
+                    </Link>
                     <ul className="h__list">
                         <li>
                             <Link to="/">
