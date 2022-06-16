@@ -10,6 +10,7 @@ function ScrollProvider({ children }) {
         isBackground,
         isCount,
     };
+
     var scrollMaxY = window.scrollMaxY || document.documentElement.scrollHeight - document.documentElement.clientHeight;
     window.onscroll = function () {
         if (window.scrollY > 100) {

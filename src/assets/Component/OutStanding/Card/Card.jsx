@@ -12,7 +12,6 @@ function Card({ img, icon, urlImg, urlVideo }) {
                     <FontAwesomeIcon
                         icon={icon}
                         onClick={() => {
-                            // render(<Layout img={menu.path} />);
                             render(<Layout urlImg={urlImg} urlVideo={urlVideo} />);
                         }}
                     />
