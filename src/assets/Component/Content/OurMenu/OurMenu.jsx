@@ -19,7 +19,7 @@ import img15 from './../../../img/3-4.jpg';
 import img16 from './../../../img/4-2.jpg';
 import img17 from './../../../img/5-2.jpg';
 import img18 from './../../../img/6-2.jpg';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 function OurMenu() {
     const content = {
