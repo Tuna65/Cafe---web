@@ -8,7 +8,6 @@ function Booking() {
     const warnPhone = useRef();
     const tks = useRef();
 
-    const [isSend, setIsSend] = useState(false);
     const [nameValue, setNameValue] = useState('');
     const [emailValue, setEmailValue] = useState('');
     const [phoneValue, setPhoneValue] = useState([]);
