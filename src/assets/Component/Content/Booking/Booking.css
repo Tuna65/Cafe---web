@@ -73,3 +73,13 @@
 .submit:hover {
     background-color: #18181d;
 }
+
+.warring__name,
+.warring__email,
+.warring__phone,
+.tks {
+    color: rgb(231, 130, 14);
+    font-family: var(--font-open);
+    display: inline-block;
+    margin-top: 8px;
+}

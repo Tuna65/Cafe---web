@@ -48,10 +48,12 @@ input,
 textarea {
     border: none;
     outline: none;
-    font-size: 2rem;
-    padding: 8px 8px;
+    font-size: 1.4rem;
+    padding: 12px 8px;
     background-color: #131317;
     width: 100%;
+    color: var(--white);
+    font-weight: 300;
 }
 
 label {
