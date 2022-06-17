@@ -1,7 +1,7 @@
 .partycard__wrapper {
     background-color: var(--bg-color);
     padding-top: 8rem;
-    padding-bottom: 10rem;
+    padding-bottom: 3rem;
 }
 
 .pc__img {
@@ -60,4 +60,11 @@
 .pc__inner > p {
     margin-top: 8px;
     line-height: 2.4rem;
+}
+
+@media (max-width: 768px) {
+    .pc__inner {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
 }
