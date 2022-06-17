@@ -23,7 +23,7 @@ function Booking() {
             warn.current.innerText = `${message1}`;
         } else {
             if (message2) {
-                let regex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+                let regex = /^\w+([\\.-]?\w+)*@\w+([\\.-]?\w+)*(\.\w{2,3})+$/;
                 if (!regex.test(value)) {
                     warn.current.innerText = `${message2}`;
                 }
