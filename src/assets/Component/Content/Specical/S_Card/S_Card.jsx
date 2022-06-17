@@ -1,3 +1,7 @@
+import { render } from '@testing-library/react';
+import { ReactDOM } from 'react';
+import React from 'react';
+
 import shrimp from '../../../../img/2-2.jpg';
 import crab from '../../../../img/2-6.jpg';
 import gras from '../../../../img/3-6.jpg';
@@ -8,7 +12,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faImage } from '@fortawesome/free-regular-svg-icons';
 import Intro from '../../../Intro/Intro';
 import Layout from '../../../Layout/Layout';
-import { render } from '@testing-library/react';
 
 function SCard() {
     const menus = [
@@ -58,7 +61,7 @@ function SCard() {
                                     <FontAwesomeIcon
                                         icon={faImage}
                                         onClick={() => {
-                                            render(<Layout urlImg={menu.path} urlVideo={null} />);
+                                            ReactDOM.render(<Layout urlImg={menu.path} urlVideo={null} />);
                                         }}
                                     />
                                 </span>

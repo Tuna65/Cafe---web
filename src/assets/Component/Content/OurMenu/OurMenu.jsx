@@ -199,9 +199,6 @@ function OurMenu() {
                             </div>
                         );
                     })}
-                    {/* <div className="col l-6 c-12">
-                        <PostMenu />
-                    </div> */}
                 </div>
             </div>
         </div>
