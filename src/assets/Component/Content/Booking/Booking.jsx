@@ -10,7 +10,7 @@ function Booking() {
 
     const [nameValue, setNameValue] = useState('');
     const [emailValue, setEmailValue] = useState('');
-    const [phoneValue, setPhoneValue] = useState([]);
+    const [phoneValue, setPhoneValue] = useState('');
 
     const content = {
         title: 'BOOK A TABLE',
@@ -19,7 +19,7 @@ function Booking() {
     };
 
     const checkValue = (value, warn, message1, message2) => {
-        if (value === '' || value === []) {
+        if (value === '') {
             warn.current.innerText = `${message1}`;
         } else {
             if (message2) {
