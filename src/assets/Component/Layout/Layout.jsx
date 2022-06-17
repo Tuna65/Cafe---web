@@ -10,8 +10,8 @@ function Layout({ urlImg, urlVideo }) {
     const [srcVideo, setSrcVideo] = useState(urlVideo);
     const handleOnclick = () => {
         layout.current.style.display = 'none';
-        setSrcImg('');
-        setSrcVideo('');
+        // setSrcImg('');
+        // setSrcVideo('');
     };
 
     return (
