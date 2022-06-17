@@ -30,3 +30,11 @@
     font-family: 'Lora', serif;
     font-style: italic;
 }
+
+@media (max-width: 710px) {
+    .food__inner-img,
+    .food__inner-details {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+}

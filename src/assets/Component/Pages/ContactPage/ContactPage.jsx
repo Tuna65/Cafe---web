@@ -36,7 +36,7 @@ function ContactPage() {
                             <div>
                                 <ul className="form__option">
                                     <li
-                                        className={isActived === 'li-1' ? 'actived' : ''}
+                                        className={isActived === 'li-1' ? 'actived ' : ''}
                                         onClick={() => {
                                             setIsActived('li-1');
                                             isRenderContact(1);

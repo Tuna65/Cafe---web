@@ -11,7 +11,7 @@ function EventPage() {
             <div className="event__header">
                 <Header />
             </div>
-            <div className="event__banner">
+            <div className="event__banner" id="Top">
                 <Banner title={'EVENTS'} note={'LATEST EVENTS FROM US'} />
             </div>
             <div className="event__container">

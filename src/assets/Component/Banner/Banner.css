@@ -40,3 +40,14 @@
     bottom: 6px;
     right: 110%;
 }
+
+@media (max-width: 710px) {
+    .banner__inner > h5 {
+        font-size: 1.8rem;
+    }
+
+    .banner__inner > span::after,
+    .banner__inner > span::before {
+        width: 100px;
+    }
+}

@@ -9,7 +9,7 @@
     margin: auto;
     height: 100%;
     align-items: center;
-    padding: 30px 0;
+    padding: 30px 20px;
 }
 
 .bn__inner > :first-child {
@@ -31,4 +31,19 @@
 .bn__btn:hover {
     background-color: var(--white);
     color: var(--black);
+}
+
+@media (max-width: 710px) {
+    .bn__inner > :first-child {
+        font-size: 1.2rem;
+    }
+
+    .bn__btn {
+        font-size: 1rem;
+        padding: 8px 10px;
+    }
+
+    .bn__inner {
+        padding: 15px 0;
+    }
 }

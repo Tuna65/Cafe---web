@@ -148,11 +148,10 @@ function MenuDefaultPage() {
     ];
     return (
         <div className="md__wrapper">
-            <div id="Top"></div>
             <div className="md__wrapper-header">
                 <Header />
             </div>
-            <div className="md__wrapper-banner">
+            <div className="md__wrapper-banner" id="Top">
                 <Banner title={'OUR MENU'} note={'FOOD & DRINKS'} />
             </div>
 

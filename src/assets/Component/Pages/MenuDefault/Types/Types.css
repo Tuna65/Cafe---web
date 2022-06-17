@@ -30,10 +30,17 @@
 }
 
 .items > * {
-    margin-left: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 .type__container {
     overflow: hidden;
     width: 100%;
+}
+
+@media (max-width: 710px) {
+    .inner__right {
+        width: auto;
+    }
 }

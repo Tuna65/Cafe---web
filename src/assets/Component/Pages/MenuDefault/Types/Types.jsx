@@ -10,10 +10,10 @@ function Types({ img, items, title, note, reverse }) {
                 className="row no-gutters"
                 style={reverse ? { flexDirection: 'row-reverse' } : { flexDirection: 'row' }}
             >
-                <div className="col l-3 type__container-img">
+                <div className="col l-3 m-12 c-12 type__container-img">
                     <img src={img} alt="" className="" />
                 </div>
-                <div className="col l-9 type__container-right">
+                <div className="col l-9 m-12 c-12 type__container-right">
                     <div className="inner__right grid">
                         <div className="type__intro">
                             <Intro title={title} note={note} paragraph={''} margin={true} />
@@ -21,7 +21,7 @@ function Types({ img, items, title, note, reverse }) {
                         <div className="row type__list">
                             {items.map((item, index) => {
                                 return (
-                                    <div className="col l-6 c-12 items" key={index}>
+                                    <div className="col l-6 m-6 c-12 items" key={index}>
                                         <PostMenu
                                             path={item.path}
                                             name={item.name}

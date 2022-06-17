@@ -26,3 +26,13 @@
 .decount-type {
     font-size: 1.4rem;
 }
+
+@media (max-width: 710px) {
+    .count__inner {
+        flex-direction: column;
+    }
+
+    .decount {
+        padding-bottom: 30px;
+    }
+}

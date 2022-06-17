@@ -23,6 +23,7 @@
 .foot__img > img {
     width: 100%;
     transform: scale(1.3);
+    position: absolute;
 }
 
 .foot__price {

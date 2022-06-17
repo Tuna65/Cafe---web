@@ -1,12 +1,13 @@
 .md__wrapper {
-    min-height: 200vh;
+    height: auto;
+    overflow: hidden;
 }
 
 .md__wrapper-header {
-    height: 75px;
-    width: 100%;
     background-color: var(--bg-color);
     position: fixed;
+    height: 75px;
+    width: 100%;
     z-index: 9;
 }
 

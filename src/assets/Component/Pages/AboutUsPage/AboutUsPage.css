@@ -1,5 +1,6 @@
 .au__wrapper {
     height: auto;
+    overflow: hidden;
 }
 .au__header {
     background-color: var(--bg-color);

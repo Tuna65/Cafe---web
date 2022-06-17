@@ -8,6 +8,7 @@ import img2 from '../../../img/bg-side-2-1.jpg';
 import Chef from '../../Chef/Chef';
 import Footer from '../../Footer/Footer';
 import Header from '../../Header/Header';
+import TabToTop from '../../TabToTop/TabToTop';
 
 function AboutUsPage() {
     const info = {
@@ -30,7 +31,7 @@ function AboutUsPage() {
             <div className="au__header">
                 <Header />
             </div>
-            <div className="au__wrapper-banner">
+            <div className="au__wrapper-banner" id="Top">
                 <Banner title={'ABOUT US'} note={'WHO WE ARE'} />
             </div>
 
@@ -41,7 +42,6 @@ function AboutUsPage() {
                 margin={false}
                 img={img1}
                 reverse={false}
-                padding={false}
             />
             <Details
                 title={info.if2.title}
@@ -50,11 +50,11 @@ function AboutUsPage() {
                 margin={false}
                 img={img2}
                 reverse={true}
-                padding={true}
             />
             <Chef />
             <Count />
             <Footer />
+            <TabToTop />
         </div>
     );
 }

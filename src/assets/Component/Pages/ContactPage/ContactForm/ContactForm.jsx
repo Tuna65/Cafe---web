@@ -26,7 +26,7 @@ function ContactForm({ hiden }) {
             <div className="row">
                 {infoConstact.map((value, index) => {
                     return (
-                        <div className="col l-4 contact__position" key={index}>
+                        <div className="col l-4 m-4 c-12 contact__position" key={index}>
                             <FontAwesomeIcon icon={value.icon} />
                             <h5>{value.type}</h5>
                             <p>{value.content}</p>

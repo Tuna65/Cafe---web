@@ -1,5 +1,6 @@
 .bar__wrapper {
     background-color: var(--bg-color);
+    overflow: hidden;
 }
 
 .bar__header {

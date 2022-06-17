@@ -55,3 +55,10 @@
 .chef__card > a:hover {
     color: var(--text-color);
 }
+
+@media (max-width: 740px) {
+    .chef__card {
+        padding-right: 12px;
+        padding-left: 12px;
+    }
+}
