@@ -1,5 +1,4 @@
 import { render } from '@testing-library/react';
-import { ReactDOM } from 'react';
 import React from 'react';
 
 import shrimp from '../../../../img/2-2.jpg';
@@ -61,7 +60,7 @@ function SCard() {
                                     <FontAwesomeIcon
                                         icon={faImage}
                                         onClick={() => {
-                                            ReactDOM.render(<Layout urlImg={menu.path} urlVideo={null} />);
+                                            render(<Layout urlImg={menu.path} urlVideo={null} />);
                                         }}
                                     />
                                 </span>
