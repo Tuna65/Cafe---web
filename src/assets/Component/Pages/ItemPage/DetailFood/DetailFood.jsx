@@ -6,7 +6,7 @@ function DetailFood() {
     return (
         <div className="foot-content">
             <div className="grid foot__inner">
-                <div className="row">
+                <div className="row ">
                     <div className="col l-6 c-12 foot__img">
                         <img src={img} alt="" />
                     </div>
