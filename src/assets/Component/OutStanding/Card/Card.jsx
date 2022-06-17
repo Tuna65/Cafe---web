@@ -4,11 +4,8 @@ import Layout from '../../Layout/Layout';
 import './Card.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useRef } from 'react';
-import { useState } from 'react';
 function Card({ img, icon, urlImg, urlVideo }) {
     const a = useRef();
-
-    const [ishidden, setIsHidden] = useState(false);
 
     return (
         <div className="o__card" ref={a}>
@@ -18,8 +15,7 @@ function Card({ img, icon, urlImg, urlVideo }) {
                     <FontAwesomeIcon
                         icon={icon}
                         onClick={() => {
-                            // render(<Layout urlImg={urlImg} urlVideo={urlVideo} />, a.current);
-                            setIsHidden(true);
+                            render(<Layout urlImg={urlImg} urlVideo={urlVideo} />, a.current);
                         }}
                     />
                 </span>
@@ -31,7 +27,6 @@ function Card({ img, icon, urlImg, urlVideo }) {
                 dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
             </p>
             <span>READ MORE</span>
-            {ishidden ? <Layout urlImg={urlImg} urlVideo={urlVideo} /> : ''}
         </div>
     );
 }
