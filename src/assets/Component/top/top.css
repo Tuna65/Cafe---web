@@ -162,8 +162,8 @@
 
 /* ================================================================= */
 @media (max-width: 768px) {
-    .top__wrapper-1 > h1,
-    .top__wrapper-2 > h1 {
+    .top__title > h1,
+    .top__title > h1 {
         font-size: 2.6rem;
         letter-spacing: 5px;
     }
