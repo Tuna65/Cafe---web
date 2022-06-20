@@ -1,21 +1,22 @@
-import { render } from '@testing-library/react';
-import Layout from '../../Layout/Layout';
-
-import './Card.css';
+import React, { useRef } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { useRef } from 'react';
+import { createRoot } from 'react-dom';
+
+import Layout from '../../Layout/Layout';
+import './Card.css';
 function Card({ img, icon, urlImg, urlVideo }) {
     const a = useRef();
 
     return (
-        <div className="o__card" ref={a}>
+        <div className="o__card">
             <div className="o__img">
                 <img src={img} alt="" />
                 <span className="o__icon">
                     <FontAwesomeIcon
                         icon={icon}
                         onClick={() => {
-                            render(<Layout urlImg={urlImg} urlVideo={urlVideo} />, a.current);
+                            const root = createRoot(a.current);
+                            root.render(<Layout urlImg={urlImg} urlVideo={urlVideo} />);
                         }}
                     />
                 </span>
@@ -27,6 +28,7 @@ function Card({ img, icon, urlImg, urlVideo }) {
                 dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
             </p>
             <span>READ MORE</span>
+            <span ref={a}></span>
         </div>
     );
 }

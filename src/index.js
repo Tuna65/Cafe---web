@@ -5,13 +5,16 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { ScrollProvider } from './ScrollContext';
+import LayoutProvider from './LayoutContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <React.StrictMode>
         <BrowserRouter>
             <ScrollProvider>
-                <App />
+                <LayoutProvider>
+                    <App />
+                </LayoutProvider>
             </ScrollProvider>
         </BrowserRouter>
     </React.StrictMode>,
