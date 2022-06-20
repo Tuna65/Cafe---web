@@ -6,14 +6,9 @@ import 'swiper/css';
 import 'swiper/css/effect-fade';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import { Autoplay, EffectFade, Navigation, Pagination, Parallax } from 'swiper';
-
-import { motion } from 'framer-motion';
+import { Autoplay, EffectFade, Navigation, Pagination } from 'swiper';
 
 function Top() {
-    const transiton = { duration: 0.8, type: 'spring', delay: 0.2 };
-    const transition = { duration: 0.8, type: 'spring', delay: 0.3 };
-
     return (
         <>
             <Swiper
@@ -24,67 +19,57 @@ function Top() {
                 direction={'horizontal'}
                 effect={'fade'}
                 autoplay={{
-                    delay: 5000,
+                    delay: 500000,
                     disableOnInteraction: false,
                 }}
-                parallax={true}
                 navigation={true}
                 pagination={{
                     el: '.swiper-pagination',
                     clickable: true,
                 }}
-                // pagination={{
-                //     clickable: true,
-                // }}
-                modules={[Autoplay, Navigation, Pagination, EffectFade, Parallax]}
+                modules={[Autoplay, Navigation, Pagination, EffectFade]}
                 className="mySwiper"
                 id="Top"
             >
                 <SwiperSlide>
-                    <div className="top__wrapper-2">
-                        <div className="top__blur"></div>
-                        <motion.h1
-                            data-swiper-parallax="300"
-                            initial={{ left: '5%' }}
-                            whileInView={{ left: '0%' }}
-                            transition={transiton}
-                        >
-                            ENJOY YOUR DINNER
-                        </motion.h1>
-                        {/* <motion.h1  >ENJOY YOUR DINNER</motion.h1> */}
-                    </div>
+                    {({ isActive }) => (
+                        <>
+                            <div className="top__wrapper-1">
+                                <div className="top__blur"></div>
+                            </div>
+                            <div className={isActive ? 'activee top__content' : 'top__content'}>
+                                <div className="top__title">
+                                    <h1>ENJOY YOUR DINNER</h1>
+                                </div>
+                                <p>Enjoy the real fresh food from our chef</p>
+                                <div className="top__content-button">
+                                    <button>BOOK NOW</button>
+                                    <button>VIEW MENU</button>
+                                </div>
+                            </div>
+                        </>
+                    )}
                 </SwiperSlide>
 
                 <SwiperSlide>
-                    <div className="top__wrapper-1">
-                        <div className="top__blur"></div>
-                        <motion.h1
-                            data-swiper-parallax="300"
-                            initial={{ left: '15%' }}
-                            whileInView={{ left: '0%' }}
-                            transition={transiton}
-                        >
-                            EXQUITITE ATMOSPHERE
-                        </motion.h1>
-                        {/* <h1 data-swiper-parallax="300">EXQUITITE ATMOSPHERE</h1> */}
-                    </div>
+                    {({ isActive }) => (
+                        <>
+                            <div className="top__wrapper-1">
+                                <div className="top__blur"></div>
+                            </div>
+                            <div className={isActive ? 'activee top__content' : 'top__content'}>
+                                <div className="top__title">
+                                    <h1>EXQUITITE ATMOSPHERE</h1>
+                                </div>
+                                <p>Enjoy the real fresh food from our chef</p>
+                                <div className="top__content-button">
+                                    <button>BOOK NOW</button>
+                                    <button>VIEW MENU</button>
+                                </div>
+                            </div>
+                        </>
+                    )}
                 </SwiperSlide>
-
-                <div className="top__content ">
-                    <motion.p initial={{ top: '50px' }} whileInView={{ top: '10px' }} transition={transiton}>
-                        Enjoy the real fresh food from our chef
-                    </motion.p>
-                    <motion.div
-                        className="top__content-button"
-                        initial={{ top: '60px' }}
-                        whileInView={{ top: '0' }}
-                        transition={transition}
-                        animate="visible"
-                    >
-                        <button>BOOK NOW</button>
-                        <button>VIEW MENU</button>
-                    </motion.div>
-                </div>
             </Swiper>
         </>
     );

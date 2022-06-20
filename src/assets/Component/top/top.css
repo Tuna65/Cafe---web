@@ -10,7 +10,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     transform: scale(100%);
-    -webkit-filter: grayscale(100%);
+    /* -webkit-filter: grayscale(100%); */
     filter: grayscale(100%);
     position: relative;
 }
@@ -58,18 +58,22 @@
 
 /* ==================== */
 
-.top__wrapper-2 h1,
-.top__wrapper-1 h1 {
+.top__title {
+    width: 100%;
+}
+
+.top__title > h1,
+.top__title > h1 {
     position: absolute;
-    left: 0;
-    right: 0;
     text-align: center;
-    top: 40%;
+    top: -40px;
     font-size: 6rem;
     font-weight: 300;
     letter-spacing: 20px;
     color: var(--white);
     margin-bottom: 50px;
+    left: 0;
+    opacity: 0;
 }
 
 .top__content {
@@ -82,16 +86,21 @@
     text-align: center;
 }
 
+.top__content-button {
+    opacity: 0;
+}
+
 .top__content > * {
     position: relative;
     margin: 0 0 56px 0;
     z-index: 4;
 }
 
-.top__content > :nth-child(1) {
+.top__content > P {
     font-size: 1.8rem;
     color: var(--orage);
     font-family: var(--font-open);
+    opacity: 0;
 }
 
 .top__content-button > :nth-child(1),
@@ -114,6 +123,41 @@
 .top__content-button > :nth-child(2) {
     background-color: var(--orage);
     border: 2px solid var(--orage);
+}
+
+.activee > .top__title > h1 {
+    animation: content 0.6s ease forwards;
+    opacity: 1;
+}
+
+@keyframes content {
+    from {
+        right: -30%;
+    }
+    to {
+        right: 0%;
+    }
+}
+
+.activee > p {
+    animation: pragraph 0.4s ease forwards;
+    animation-delay: 0.3s;
+}
+
+@keyframes pragraph {
+    from {
+        top: 50px;
+        opacity: 0;
+    }
+    to {
+        top: -20px;
+        opacity: 1;
+    }
+}
+
+.activee > .top__content-button {
+    animation: pragraph 0.4s ease forwards;
+    animation-delay: 0.5s;
 }
 
 /* ================================================================= */
