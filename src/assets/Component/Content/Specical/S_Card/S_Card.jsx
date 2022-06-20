@@ -1,5 +1,5 @@
-import { render } from '@testing-library/react';
-import React from 'react';
+import { createRoot } from 'react-dom';
+import React, { useRef } from 'react';
 
 import shrimp from '../../../../img/2-2.jpg';
 import crab from '../../../../img/2-6.jpg';
@@ -13,6 +13,8 @@ import Intro from '../../../Intro/Intro';
 import Layout from '../../../Layout/Layout';
 
 function SCard() {
+    const container = useRef();
+
     const menus = [
         {
             path: shrimp,
@@ -60,7 +62,8 @@ function SCard() {
                                     <FontAwesomeIcon
                                         icon={faImage}
                                         onClick={() => {
-                                            render(<Layout urlImg={menu.path} urlVideo={null} />);
+                                            const root = createRoot(container.current);
+                                            root.render(<Layout urlImg={menu.path} urlVideo={null} />);
                                         }}
                                     />
                                 </span>
@@ -68,6 +71,7 @@ function SCard() {
                             <h5>{menu.name}</h5>
                             <span></span>
                             <span>{menu.price}</span>
+                            <div ref={container}></div>
                         </div>
                     ))}
                 </div>

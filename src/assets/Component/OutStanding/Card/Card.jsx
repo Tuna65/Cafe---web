@@ -5,7 +5,7 @@ import { createRoot } from 'react-dom';
 import Layout from '../../Layout/Layout';
 import './Card.css';
 function Card({ img, icon, urlImg, urlVideo }) {
-    const a = useRef();
+    const container = useRef();
 
     return (
         <div className="o__card">
@@ -15,7 +15,7 @@ function Card({ img, icon, urlImg, urlVideo }) {
                     <FontAwesomeIcon
                         icon={icon}
                         onClick={() => {
-                            const root = createRoot(a.current);
+                            const root = createRoot(container.current);
                             root.render(<Layout urlImg={urlImg} urlVideo={urlVideo} />);
                         }}
                     />
@@ -28,7 +28,7 @@ function Card({ img, icon, urlImg, urlVideo }) {
                 dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
             </p>
             <span>READ MORE</span>
-            <span ref={a}></span>
+            <span ref={container}></span>
         </div>
     );
 }
